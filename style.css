@@ -47,10 +47,18 @@ li {
     display: block;
     color: white;
     text-align: center;
+    /* padding: 14px 16px; */
     text-decoration: none;
 }
 
 /* Change the link color to black on hover */
 #evans-home-button a:hover {
     background-color: #111;
+}
+
+#title-container {
+    text-align: center;
+    background-color: #333; /* Grey background color */
+    color: white;
+    padding: 10px; 
 }
