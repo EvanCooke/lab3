@@ -54,16 +54,11 @@ h1 {
     text-align: center;
 }
 
-.slider {
-    width: 100%; /* Full-width container */
-    overflow: hidden; /* Hide the overflowing content */
-    position: relative;
-}
-
-.slider img {
-    width: 100%; /* Set the width of the image */
+img {
     position: absolute;
-    animation: slide 10s linear infinite; /* Adjust the duration as needed */
+    left: -100%;
+    margin: 7em -244px;
+    animation: slide 5s infinite;
 }
 
 @keyframes slide {
