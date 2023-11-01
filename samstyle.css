@@ -44,3 +44,7 @@ body {
     display: table;
     clear: both;
 }
+
+img {
+    width: 80%;
+}
