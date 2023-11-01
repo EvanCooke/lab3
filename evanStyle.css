@@ -1,25 +1,40 @@
-#evans-header {
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#header {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #333;
 }
 
-#evans-home-button {
-    float: left;
+#home-button {
+    list-style: none;
+    margin-right: 20px;
 }
 
-#evans-home-button a {
+#home-button a {
     display: block;
     color: white;
     text-align: center;
     /* padding: 14px 16px; */
     text-decoration: none;
+    display: inline;
 }
 
 /* Change the link color to black on hover */
-#evans-home-button a:hover {
+#home-button a:hover {
     background-color: #111;
 }
 
@@ -27,5 +42,9 @@
     text-align: center;
     background-color: #333; /* Grey background color */
     color: white;
-    padding: 10px; 
+    width: 300px;
+}
+
+h1 {
+    margin: 0;
 }
