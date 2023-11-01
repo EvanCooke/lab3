@@ -22,8 +22,6 @@ body {
 #home-button {
     list-style: none;
     margin-right: 20px;
-    display: flex; 
-    align-items: center;
 }
 
 #home-button a {
@@ -44,7 +42,6 @@ body {
     text-align: center;
     background-color: #333; /* Grey background color */
     color: white;
-    width: 300px;
 }
 
 h1 {
