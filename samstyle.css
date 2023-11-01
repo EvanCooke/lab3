@@ -1,6 +1,6 @@
 body {
-    color: #14001a;
-    background-color:#908c92;
+    color: white;
+    background-color:black;
 }
 
 .topnav {
@@ -25,4 +25,22 @@ body {
 .topnav a.active {
     background-color: #2c1338;
     color: white;
+}
+
+.midcolumn {
+    float: left;
+    width: 50%;
+    background-color: #632780;
+}
+.sidecolumn {
+    float: left;
+    width: 25%;
+    background-color: #2c1338;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
