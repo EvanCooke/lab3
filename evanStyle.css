@@ -31,24 +31,23 @@ body {
     background-color: #111;
 }
 
-#title-container {
-    text-align: center;
-    background-color: #333; /* Grey background color */
-    color: white;
-    width: 300px;
-}
-
 h1 {
     margin: 0;
     padding-top: 10px;
     text-align: center;
 }
 
-img {
+.slider {
+    width: 100%; /* Full-width container */
+    position: relative;
+}
+
+.slider img {
+    max-width: 100%; /* Set the width of the image */
+    height: auto;
     position: absolute;
-    left: -100%;
-    margin: 7em -244px;
-    animation: slide 5s infinite;
+    top: 0;
+    animation: slide 30s linear infinite; /* Adjust the duration as needed */
 }
 
 @keyframes slide {
@@ -56,6 +55,6 @@ img {
         left: 0; /* Start from the left */
     }
     100% {
-        left: -100%; /* Move to the right */
+        left: 100%; /* Move to the right */
     }
 }
