@@ -27,6 +27,12 @@ body {
     color: white;
 }
 
+.topnav a.split {
+    float: right;
+    background-color: #2c1338;
+    color: white;
+  }
+
 .midcolumn {
     float: left;
     width: 50%;
