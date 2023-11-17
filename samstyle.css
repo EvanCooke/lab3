@@ -6,13 +6,11 @@ body {
 .midcolumn {
     float: left;
     width: 60%;
-    height: 150%;
     background-color: #632780;
 }
 .sidecolumn {
     float: left;
     width: 20%;
-    height: 150%;
     background-color: #2c1338;
 }
   
