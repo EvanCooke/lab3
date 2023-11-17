@@ -8,7 +8,7 @@ function checkAuthAndRedirect() {
     onAuthStateChanged(auth, (user) => {
         if (!user) {
             // Redirect to the login page
-            window.location.href = "login.html";
+            window.location.href = "evancooke.github.io/lab3/login.html";
         }
     });
 }
