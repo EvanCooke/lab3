@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link rel="stylesheet" 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-    h1 {
-         background-color:#292521;
-         color:#E6C7A8;
-         font-family:Trebuchet MS;
-    }
-    body {
-         background-color:#292521;
-         color:#F5AE2D;
-         font-family:Courier New;
-         padding-left:40px; 
-         padding-right:40px; 
-    }
-    .icon {
-        color:#509452;
-        font-size:35px;
-    }
-	.btn {
-    	background-color: transparent;
-    	border: none;
-    	color: #F5AE2D;
-    	padding: 8px 8px;
-    	font-size: 27px;
-    	cursor: pointer;
-  	}
-		.btn:hover {
-  		color:#E6C7A8;
-	}
-    #container {
-    display: flex;
-    padding-bottom: 20px;
-	}
-    p {
-    padding: 10px;
-    }
-	</style>
-	<title>Hackstreet Boys</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav {
+            background-color: #232429;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            padding-left: 170px;
+            padding-right: 160px;
+            padding-top: 5px;
+        }
+
+        .header {
+            color: #E2E2E3;
+            font-family: Trebuchet MS;
+            font-size: 32px
+        }
+
+        body {
+            background-color: #2C2E34;
+            color: #E7C664;
+            font-family: Courier New;
+            padding-top: 40px;
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+
+        .icon {
+            color: #9ED072;
+            font-size: 35px;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: none;
+            color: #E7C664;
+            padding: 8px 8px;
+            font-size: 27px;
+            cursor: pointer;
+            font-family: Trebuchet MS;
+        }
+
+        .btn:hover {
+            color: #E2E2E3;
+        }
+
+        #container {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            padding: 10px;
+            margin: auto;
+        }
+    </style>
+    <title>Portfolio</title>
 </head>
+
 <body>
-  <h1><span class="icon"><i class="fa fa-suitcase"></i></span> portfolio
-  <a title="Home" href="https://evancooke.github.io/lab3/index.html">
+    <nav><span class="icon"><i class="fa fa-suitcase"></i></span><span class="header"> portfolio </span>
+
+        <a title="Home" href="https://evancooke.github.io/lab3/index.html">
   <button class="btn"><i class="fa fa-home"></i></button></a>
-  <a title="Sign-In" href="https://evancooke.github.io/lab3/signIn.html">
+
+        <a title="Sign-In" href="https://evancooke.github.io/lab3/signIn.html">
   <button class="btn"><i class="fa fa-user-circle"></i></button></a>
-  </h1>
-  
-  <div id='container'><p>Lab 1 - Temperature Sensor <br><br>
-  
-  We designed a thermometer with web functionality. Our thermometer system is made using an enclosed box with a circuit within. An Arduino UNO is used to provide power to the circuit inside the box, as well as handle I/O logic to the circuit components. The Arduino is connected to an on-off switch that, when flipped, turns the device on and off. Connected to the power switch is a 5V battery that can supply power to the device in the case that the power cord to the Arduino is not plugged in. The Arduino is connected to four main components: a Raspberry Pi Pico W, the 4-digit 7-segment LED display, a pushbutton, and the DHT22 Temperature sensor. A level shifter is used to convert a 5V power source into a 3.3V power source for the Raspberry Pi Pico W. The Pico handles wireless communication from the physical circuit to the computer, which then can send text messages to a cell phone. The display and pushbutton are enclosed inside the box, and when the button is pressed, the display will show the current temperature in degrees C. The temperature sensor is attached to a 2.0 meter-long cable that is connected to the circuit inside the box. The sensor, the Arduino power cable, and the Raspberry Pi power cable can all be easily plugged and unplugged as needed.
-</p>
-  <img src='https://cdn.discordapp.com/attachments/868864573141286955/1169379282041176134/20230927_144854.jpg?ex=65553052&is=6542bb52&hm=1fef8b04977e162c9f66b8e719a75680a9243b233b4d46be5b0cf6ae22f5aa5e&' width="250" height="350"/>
-</div>
 
-<div id='container'><img src='https://cdn.discordapp.com/attachments/868864573141286955/1169382834092388442/image.png?ex=655533a1&is=6542bea1&hm=9846bfd248fd264e10db9f61a5ecf7081c38b57f27a272e8e43cbb8d5f830be4&' width="400" height="350"/><p>Lab 2 - Electric Eye <br><br>
-  
-  The goal of this lab is to design an “electric eye” light beam-interrupter safety system. The system consists of a transmitter that projects a beam of light onto a receiver. When an object physically obstructs the beam, a warning light is powered on and turns off when the obstructing object is removed. The purpose of the lab is to explore how to process noisy signals, namely by designing a device that can read a beam of light in a variety of lighting conditions reliably. 
+        <a title="Emily" href="https://evancooke.github.io/lab3/emily.html">
+  <button class="btn">emily</button></a></a> <a title="Evan" href="https://evancooke.github.io/lab3/evan.html">
+  <button class="btn">evan</button></a>
 
-	We were supplied the transmitter device schematic and parts and built it accordingly for testing purposes. The transmitter uses a 555 timer and a LED driver circuit to generate a modulated transmit beam, which the receiver then reads. 
+        <a title="Sam" href="https://evancooke.github.io/lab3/sam.html">
+  <button class="btn">sam</button></a>
+    </nav>
 
-</div>
-  <div id='container'><p>Lab 3 - Portfolio Website <br><br>
-  
-  This is the project you're looking at right now! The primary purpose of this lab is to get you a preliminary experience in establishing a
-website and to highlight the importance of well-structured and intuitive user interface (UI) and user experience (UX) design. Since the UI is typically the primary portal via which users interact with a system, the success or failure of a system design is often dictated by the nature of the user experience provided by the interface. Poor interface design may compromise otherwise soundly designed systems.
-</p>
-  <img src='https://cdn.discordapp.com/attachments/868864573141286955/1169384156661305528/image.png?ex=655534dd&is=6542bfdd&hm=11cdac2cff5939772263927bbe340e70514db189f348cb4bb0a51c7028ac8f08&' width="300" height="300"/>
-</div>
+    <div id='container'>
+        <p>Lab 1 - Temperature Sensor <br><br> We designed a thermometer with web functionality. Our thermometer system is made using an enclosed box with a circuit within. An Arduino UNO is used to provide power to the circuit inside the box, as well as handle I/O logic to the circuit components. The Arduino is connected to an on-off switch that, when flipped, turns the device on and off. Connected to the power switch is a 5V battery that can supply power to the device in the case that the power cord to the Arduino is not plugged in. The Arduino is connected to four main components: a Raspberry Pi Pico W, the 4-digit 7-segment LED display, a pushbutton, and the DHT22 Temperature sensor. A level shifter is used to convert a 5V power source into a 3.3V power source for the Raspberry Pi Pico W. The Pico handles wireless communication from the physical circuit to the computer, which then can send text messages to a cell phone. The display and pushbutton are enclosed inside the box, and when the button is pressed, the display will show the current temperature in degrees C. The temperature sensor is attached to a 2.0 meter-long cable that is connected to the circuit inside the box. The sensor, the Arduino power cable, and the Raspberry Pi power cable can all be easily plugged and unplugged as needed.
+        </p>
+        <p>
+            <img src='https://cdn.discordapp.com/attachments/868864573141286955/1169379282041176134/20230927_144854.jpg?ex=65553052&is=6542bb52&hm=1fef8b04977e162c9f66b8e719a75680a9243b233b4d46be5b0cf6ae22f5aa5e&' width="250" height=auto></p>
+    </div>
+
+    <div id='container'>
+        <p><img src='https://cdn.discordapp.com/attachments/868864573141286955/1169382834092388442/image.png?ex=655533a1&is=6542bea1&hm=9846bfd248fd264e10db9f61a5ecf7081c38b57f27a272e8e43cbb8d5f830be4&' width="400" height=auto/></p>
+        <p>Lab 2 - Electric Eye <br><br> The goal of this lab is to design an “electric eye” light beam-interrupter safety system. The system consists of a transmitter that projects a beam of light onto a receiver. When an object physically obstructs the beam, a warning light is powered on and turns off when the obstructing object is removed. The purpose of the lab is to explore how to process noisy signals, namely by designing a device that can read a beam of light in a variety of lighting conditions reliably. We were supplied the transmitter device schematic and parts and built it accordingly for testing purposes. The transmitter uses a 555 timer and a LED driver circuit to generate a modulated transmit beam, which the receiver then reads.
+
+    </div>
+    <div id='container'>
+        <p>Lab 3 - Portfolio Website <br><br> This is the project you're looking at right now! The primary purpose of this lab is to get you a preliminary experience in establishing a website and to highlight the importance of well-structured and intuitive user interface (UI) and user experience (UX) design. Since the UI is typically the primary portal via which users interact with a system, the success or failure of a system design is often dictated by the nature of the user experience provided by the interface. Poor interface design may compromise otherwise soundly designed systems.
+        </p>
+        <p>
+            <img src='https://cdn.discordapp.com/attachments/868864573141286955/1169384156661305528/image.png?ex=655534dd&is=6542bfdd&hm=11cdac2cff5939772263927bbe340e70514db189f348cb4bb0a51c7028ac8f08&' width="300" height=auto></p>
+    </div>
 
 
 </body>
+
 </html>
