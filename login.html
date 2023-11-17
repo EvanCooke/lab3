@@ -49,19 +49,75 @@
             };
         };
     </script>
-        <style>
-        /* Add some basic styling for the error message */
-        #error-message {
-            color: red;
-            margin-bottom: 10px;
+        
+
+    <link rel="stylesheet" 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    nav {
+    	background-color:#282533;
+          width: 100%;
+          top: 0;
+          left: 0;
+          position: fixed;
+          padding-left: 170px;
+            padding-right: 160px;
+            padding-top: 5px;
+    }
+    .header {
+         color:#DFDDF3;
+         font-family:Trebuchet MS;
+         font-size: 32px
+    }
+    body {
+         background-color:#1F1D27;
+         color:#C4A7E7;
+         font-family:Courier New;
+         padding-top:200px; 
+         padding-left:170px; 
+         padding-right:170px; 
+    }
+    .icon {
+        color:#9CCFD8;
+        font-size:35px;
+    }
+	.btn {
+    	background-color: transparent;
+    	border: none;
+    	color: #C4A7E7;
+    	padding: 8px 8px;
+    	font-size: 27px;
+    	cursor: pointer;
+        font-family:Trebuchet MS;
+  	}
+		.btn:hover {
+  		color:#DFDDF3;
+	}
+	        #error-message {
+            color: #9CCFD8;
         }
-    </style>
+    #container {
+    display: flex;
+    padding-bottom: 20px;
+	}
+    p {
+    padding: 0px;
+    }
+	</style>
+	<title>Sign-In</title>
+
 </head>
 
 <body>
-    <h2>Login</h2>
+    <nav><span class="icon"><i class="fa fa-user-circle"></i></span><span class="header"> sign-in </span>
+  <a title="Home" href="https://evancooke.github.io/lab3/index.html">
+  <button class="btn"><i class="fa fa-home"></i></button></a>
+  <a title="Portfolio" href="https://evancooke.github.io/lab3/Portfolio.html">
+  <button class="btn"><i class="fa fa-suitcase"></i></button></a>
+  </nav>
+  
+  
     <!-- Display error message -->
-    <p id="error-message"></p>
+
     <form id="loginForm">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -69,7 +125,9 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="button" onclick="login()">Login</button>
+        <a title=Sign-In><button style="font-size: 18px; padding: 0px;" class="btn" onclick="login()">
+            <i class="fa fa-arrow-right"></i></button></a>
+            <p id="error-message"></p>
     </form>
 
     <!-- Link to signup page -->
