@@ -8,7 +8,7 @@
 <!-- Include Firebase authentication script -->
 <script type="module" src="firebase-auth.js"></script>
 <script type="module">
-	import { checkAuthAndRedirect } from "firebase-auth.js";
+	import { checkAuthAndRedirect } from "./firebase-auth.js";
 	window.checkAuthAndRedirect = checkAuthAndRedirect;
 	window.onload = () => {
 		checkAuthAndRedirect()
