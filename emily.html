@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Include the Firebase initialization script -->
+<script src="firebase-init.js" type="module"></script>
+
+<!-- Include Firebase authentication script -->
+<script src="firebase-auth.js" type="module"></script>
+
+<!-- Check authentication state and redirect if not logged in -->
+<script>
+    checkAuthAndRedirect();
+</script>
+
+<!-- Your page-specific content -->
+
   <link rel="stylesheet" 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
     nav {
@@ -59,7 +72,7 @@
   <a title="Portfolio" href="https://evancooke.github.io/lab3/Portfolio.html">
   <button class="btn"><i class="fa fa-suitcase"></i></button></a>
 
-  <a title="Sign-in" href="https://evancooke.github.io/lab3/signIn.html">
+  <a title="Sign-in" href="https://evancooke.github.io/lab3/login.html">
   <button class="btn"><i class="fa fa-user-circle"></i></button></a>  <a title="Evan" href="https://evancooke.github.io/lab3/evan.html">
   <button class="btn">evan</button></a>
   <a title="Sam" href="https://evancooke.github.io/lab3/sam.html">

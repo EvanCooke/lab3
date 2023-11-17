@@ -11,25 +11,27 @@ body {
     margin-top: 0;
 }
 
-#home-button {
+#header li {
     list-style: none;
     margin-right: 20px;
     display: flex; 
     align-items: center;
+    display: inline;
 }
 
-#home-button a {
+
+#header li a {
     display: block;
     color: white;
     text-align: center;
-    /* padding: 14px 16px; */
     text-decoration: none;
     display: inline;
 }
 
 /* Change the link color to black on hover */
-#home-button a:hover {
+#header li a:hover {
     background-color: #111;
+    padding: 2vb;
 }
 
 h1 {
