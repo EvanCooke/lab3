@@ -7,8 +7,8 @@
 <!-- Include Firebase authentication script -->
 <script src="firebase-auth.js" type="module"></script>
 
-<!-- Check authentication state and redirect if not logged in -->
-<script>
+<script type="module">
+	import { checkAuthAndRedirect } from './firebase-auth.js';
     checkAuthAndRedirect();
 </script>
 
