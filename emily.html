@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+
+<head>
 	<!-- Include the Firebase initialization script -->
-<script src="firebase-init.js" type="module"></script>
+<script src="firebase-init.js"></script>
 
 <!-- Include Firebase authentication script -->
-<script src="firebase-auth.js" type="module"></script>
-<head>
+<script src="firebase-auth.js"></script>
 
-
-</script>
-    checkAuthAndRedirect();
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Call the init function
+            checkAuthAndRedirect();
+        });
 </script>
 
 <!-- Your page-specific content -->
