@@ -1,6 +1,7 @@
 body {
     color: white;
     background-color:rgb(51, 51, 51);
+    padding-top:40px;
 }
 
 .midcolumn {
@@ -37,7 +38,7 @@ nav {
 }
 
 .icon {
-    color:rgb(112, 2, 202);
+    color:#a137e7;
     font-size:35px;
 }
 
