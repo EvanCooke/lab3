@@ -1,5 +1,5 @@
 nav {
-    background-color: #343231;
+    background-color: #393E46;
     width: 100%;
     top: 0;
     left: 0;
@@ -10,14 +10,14 @@ nav {
 }
 
 .header {
-    color: #FFFFFF;
+    color: #00ADB5;
     font-family: Trebuchet MS;
     font-size: 32px
 }
 
 body {
-    background-color: #262727;
-    color: #665957;
+    background-color: #222831;
+    color: #EEEEEE;
     font-family: Courier New;
     padding-top: 40px;
     padding-left: 160px;
@@ -25,14 +25,14 @@ body {
 }
 
 .icon {
-    color: #F0D3C9;
+    color: #00ADB5;
     font-size: 35px;
 }
 
 .btn {
     background-color: transparent;
     border: none;
-    color: #665957;
+    color: #00ADB5;
     padding: 8px 8px;
     font-size: 27px;
     cursor: pointer;
