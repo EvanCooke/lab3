@@ -30,7 +30,7 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
-
+	    }
         // Define the login function after Firebase is initialized
         window.login = function () {
             
@@ -48,7 +48,7 @@
                         const errorMessage = error.message;
                         document.getElementById("error-message").innerText = "Incorrect credentials. Please try again.";
                     });
-            }
+            
         
 
 	    };
