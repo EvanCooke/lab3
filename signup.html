@@ -8,6 +8,8 @@
     <!-- Update the Firebase SDK URLs to version 9 -->
 <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+	    <!-- Include Firebase authentication script -->
+<script src="my-firebase-auth.js" type="module"></script>
     <script type="module">
         // Import necessary functions from the modular SDK
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js';
@@ -86,6 +88,13 @@
     	font-size: 27px;
     	cursor: pointer;
         font-family:Trebuchet MS;
+			button {
+    	background-color: transparent;
+    	border: none;
+    	color: #C4A7E7;
+    	font-size: 27px;
+    	cursor: pointer;
+        font-family:Trebuchet MS;
   	}
 		.btn:hover {
   		color:#DFDDF3;
@@ -121,8 +130,8 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <a title=Sign-Up><button style="font-size: 18px; padding: 0px;" class="btn" onclick="signup()">
-            <i class="fa fa-arrow-right"></i></button></a>
+
+			<button type="button" onclick="signup()"><i class="fa fa-arrow-right"></i></button>
             <p id="error-message"></p>
     </form>
 
