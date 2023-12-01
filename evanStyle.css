@@ -25,7 +25,7 @@ body {
 }
 
 .icon {
-    color: #222831;
+    color: #00ADB5;
     font-size: 35px;
 }
 
@@ -49,8 +49,11 @@ body {
     padding-bottom: 20px;
 }
 
-p {
-    padding: 10px;
+p,h2 {
+    max-width: 400px; 
+    width:100%;
+    text-align: left;
+    padding-left: 0px;
     margin: auto;
 }
 
@@ -63,4 +66,7 @@ p {
 
 #evanspic {
     width:30vh;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #888888;
 }
