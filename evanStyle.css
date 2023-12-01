@@ -54,24 +54,13 @@ p {
     margin: auto;
 }
 
-.slider {
-    width: 100%; /* Full-width container */
-    position: relative;
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.slider img {
-    max-width: 100%; /* Set the width of the image */
-    height: auto;
-    position: relative;
-    top: 0;
-    animation: slide 30s linear infinite; /* Adjust the duration as needed */
-}
-
-@keyframes slide {
-    0% {
-        left: 0; /* Start from the left */
-    }
-    100% {
-        left: 100%; /* Move to the right */
-    }
+#evanspic {
+    width:30vh;
 }
